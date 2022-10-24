@@ -453,12 +453,15 @@ p {
 .project-info span, .project-title h3 {
     color:#36cd72;
 }
+.project-info a{
+    color:#36cd72;
+}
 .project-info {
     font-weight:100;
     padding:10px 0;
 }
 .project-info span {
-    width: 80px;
+    width: 100px;
     display: inline-block;
 }
 .project-info div {
@@ -840,16 +843,28 @@ p {
     color:#fff;
 }
 
-.my-youtube {
+.my-telegram {
     bottom:30px;
+    left:20px;
+    background: #02d0ff;
+}
+
+.my-youtube {
+    bottom:80px;
     left:20px;
     background: red;
 }
 
-.my-telegram {
-    bottom:80px;
+.my-gitlab {
+    bottom:130px;
     left:20px;
-    background: #02d0ff;
+    background: rgb(255, 115, 0);
+}
+
+.my-github {
+    bottom:180px;
+    left:20px;
+    background: #000;
 }
 
 

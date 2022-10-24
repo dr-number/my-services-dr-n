@@ -4,8 +4,17 @@ const PROJ_IMG = "my_projects";
 document.getElementById("top-description").innerText = data.top_description;
 document.getElementById("about-my-works").innerText = data.about_my_works;
 document.getElementById("my_youtube_href").href = data.my_youtube;
+
 document.querySelectorAll(".my_telegram_href").forEach(item => {
     item.href = data.my_telegram;
+});
+
+document.querySelectorAll(".my_gitlab_href").forEach(item => {
+    item.href = data.my_gitlab;
+});
+
+document.querySelectorAll(".my_github_href").forEach(item => {
+    item.href = data.my_github;
 });
 
 const mySkills = document.getElementById("my-skills");
@@ -67,19 +76,19 @@ if (myWorksBox && data.my_works){
             <div class="span6">
                 <div class="project-description">
                     <div class="project-title clearfix">
-                        <h3>` + category.title + `</h3>
+                        <h3>` + proj.title + `</h3>
                         <span class="show_hide close">
                             <i class="icon-cancel"></i>
                         </span>
                     </div>
                     <div class="project-info">
-                            <span>Date</span>` + category.date + `</div>
-                        <div>
-                            <span>Skills</span>` + category.skills + `</div>
-                        <div>
-                            <span>Link</span>` + category.link + `</div>
+                        <div><span>Дата:</span>` + proj.date + `</div>
+                        <div><span>Технологии:</span>` + proj.skills + `</div>
+                        <div><span>Ссылка:</span><a href="` + proj.link + `">` + proj.link + `</a></div>
+                        <div>` + proj.description + `</div>
+
                     </div>
-                    <p>` + category.description + `</p>
+                    <p>` + proj.description + `</p>
                 </div>`;
         
             myWorksBox.appendChild(div);
