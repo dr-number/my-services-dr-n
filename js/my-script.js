@@ -4,7 +4,9 @@ const PROJ_IMG = "my_projects";
 document.getElementById("top-description").innerText = data.top_description;
 document.getElementById("about-my-works").innerText = data.about_my_works;
 document.getElementById("my_youtube_href").href = data.my_youtube;
-document.getElementById("my_telegram_href").href = data.my_telegram;
+document.querySelectorAll(".my_telegram_href").forEach(item => {
+    item.href = data.my_telegram;
+});
 
 const mySkills = document.getElementById("my-skills");
 
