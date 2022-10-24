@@ -4,7 +4,10 @@ const SERVICES_IMG = "my_services";
 //document.getElementById("title-h1").innerText = data.title;
 document.getElementById("top-description").innerText = data.top_description;
 document.getElementById("about-my-works").innerText = data.about_my_works;
-document.getElementById("my_youtube_href").href = data.my_youtube;
+
+document.querySelectorAll(".my_youtube_href").forEach(item => {
+    item.href = data.my_youtube;
+});
 
 document.querySelectorAll(".my_telegram_href").forEach(item => {
     item.href = data.my_telegram;

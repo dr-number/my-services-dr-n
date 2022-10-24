@@ -1,6 +1,6 @@
 const data = {
     //"title": "Программирование, web-разработка, 3D моделирование",
-    "top_description": "",
+    "top_description": "Более детально ознакомиться с моими проектами можно в следующих источниках:",
     "about_my_works": "",
     "my_youtube": "https://www.youtube.com/channel/UCj2GeBv-OHLXVc9CJcbuqlw",
     "my_telegram": "https://t.me/larnik7",

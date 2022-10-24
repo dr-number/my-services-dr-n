@@ -158,6 +158,35 @@ p {
     border: 3px solid #fff;
     background-color:#36cd72;
 }
+
+.top-media a{
+    display: inline-block;
+    padding: 10px;
+    font-size: 60px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: #fff;
+    margin: 5px;
+    border: 1px solid #fff;
+}
+
+.top-media a i{
+    padding-top: 10px;
+}
+
+.top-media .my_github_href{
+    background: #000;
+}
+
+.top-media .my_gitlab_href{
+    background: rgb(255, 115, 0);
+}
+
+.top-media .my_youtube_href{
+    background: red;
+}
+
 .top-my-services-descr{
     text-align: left;
 }
