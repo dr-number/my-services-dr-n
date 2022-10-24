@@ -1,4 +1,5 @@
 const PROJ_IMG = "my_projects";
+const SERVICES_IMG = "my_services";
 
 //document.getElementById("title-h1").innerText = data.title;
 document.getElementById("top-description").innerText = data.top_description;
@@ -16,6 +17,28 @@ document.querySelectorAll(".my_gitlab_href").forEach(item => {
 document.querySelectorAll(".my_github_href").forEach(item => {
     item.href = data.my_github;
 });
+
+const topMyServices = document.getElementById("top-my-services");
+
+if(topMyServices){
+    let div;
+
+    data.top_my_services.forEach(item => {
+
+        div = document.createElement("div");
+        div.innerHTML = `<div class="span6">
+        <div class="centered service">
+            <div class="circle-border zoom-in">
+                <img class="img-circle" src="` + SERVICES_IMG + `/` + item.img + `" alt="` + item.title + `">
+            </div>
+            <h3>` + item.title + `</h3>
+            <div class="top-my-services-descr">` + item.description_html + `</div>
+        </div>
+    </div>`
+
+        topMyServices.appendChild(div);
+    });
+}
 
 const mySkills = document.getElementById("my-skills");
 

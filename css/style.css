@@ -156,6 +156,16 @@ p {
     border-radius: 500px;
     -khtml-border-radius: 500px;
     border: 3px solid #fff;
+    background-color:#36cd72;
+}
+.top-my-services-descr{
+    text-align: left;
+}
+.top-my-services-descr li {
+    color: #36cd72;
+}
+.top-my-services-descr li span {
+    color: #fff;
 }
 .left-align {
     text-align:left;

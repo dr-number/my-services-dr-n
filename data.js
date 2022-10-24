@@ -6,6 +6,34 @@ const data = {
     "my_telegram": "https://t.me/larnik7",
     "my_github": "https://github.com/dr-number",
     "my_gitlab": "https://gitlab.com/dr.number",
+    "top_my_services": [
+        {
+            "title": "Программирование",
+            "img": "programming.png",
+            "description_html": `Мини-проекты, средние-проекты и лабораторные работы на следующих ЯП:
+            <ul>
+                <li><span>С++</span></li>
+                <li><span>С#</span></li>
+                <li><span>Java</span></li>
+                <li><span>JavaScript</span></li>
+                <li><span>Python (pygame, django, telegram боты)</span></li> 
+            </ul>
+            Возможны и другие языки`,
+        },
+        {
+            "title": "3D моделирование",
+            "img": "3d.png",
+            "description_html": `<ul>
+                <li><span>3D модели (по чертежам, по фото);</span></li>
+                <li><span>чертежи по модели;</span></li>
+                <li><span>анимацию работы механизма;</span></li>
+                <li><span>анимацию сборки/разборки механизма;</span></li>
+                <li><span>фотореалистичное изображение;</span></li>
+                <li><span>адаптирую модель к 3D печати;</span></li>
+                <li><span>анимированный логотип.</span></li>
+            <ul>`,
+        }
+    ],
     "skills":[
         {"name": "Python", "per": 30},
         {"name": "PHP", "per": 30},
@@ -22,16 +50,6 @@ const data = {
             "title": "Программирование",
             "href": "programming",
             "works": [
-                {
-                    "img": "cosmo_strike.jpg",
-                    "title": "Игра космический удар",
-                    "title_mini": "Игра космический удар",
-                    "skills": "Python, Pygame",
-                    "link": "https://youtu.be/LIIQs8umVV8",
-                    "description": "",
-                    "description_mini": "Мини-игра для ПК",
-                    "date":""
-                },
                 {
                     "img": "api_stripe.png",
                     "title": "Работа с API платежной системы Stripe",
@@ -71,7 +89,27 @@ const data = {
                     "description": "",
                     "description_mini": "Библиотека для ввода по маске на чистом js",
                     "date":""
-                }
+                },
+                {
+                    "img": "cosmo_strike.jpg",
+                    "title": "Игра космический удар",
+                    "title_mini": "Игра космический удар",
+                    "skills": "Python, Pygame",
+                    "link": "https://youtu.be/LIIQs8umVV8",
+                    "description": "",
+                    "description_mini": "Мини-игра для ПК",
+                    "date":""
+                },
+                {
+                    "img": "two_snake.jpg",
+                    "title": "Мини-игра \"Две змейки\"",
+                    "title_mini": "Мини-игра \"Две змейки\"",
+                    "skills": "C++",
+                    "link": "https://youtu.be/ZInq1xdfp8Q",
+                    "description": "Человек играет против компьютера",
+                    "description_mini": "Мини-игра для ПК",
+                    "date":""
+                },
 
             ]
         },
