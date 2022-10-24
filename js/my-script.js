@@ -59,9 +59,9 @@ if (myWorksBox && data.my_works){
 
             div = document.createElement("div");
             div.classList.add("toggleDiv", "row-fluid", "single-project");
+            div.setAttribute("id", "slidingDiv" + i);
             
-            div.innerHTML = `<div id="slidingDiv` + i + `" class="toggleDiv row-fluid single-project">
-            <div class="span6">
+            div.innerHTML = `<div class="span6">
                 <img src="` + PROJ_IMG + `/` + category.href + `/` + proj.img + `" alt="` + proj.title + `" />
             </div>
             <div class="span6">
@@ -80,8 +80,7 @@ if (myWorksBox && data.my_works){
                             <span>Link</span>` + category.link + `</div>
                     </div>
                     <p>` + category.description + `</p>
-                </div>
-            </div>`;
+                </div>`;
         
             myWorksBox.appendChild(div);
 
