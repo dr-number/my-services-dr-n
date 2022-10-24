@@ -811,14 +811,6 @@ p {
     text-decoration: underline;
 }
 .scrollup {
-    text-align:center;
-    cursor:pointer;
-    vertical-align:middle;
-    width:39px;
-    height:39px;
-    border-radius:5px;
-    font-size:20px;
-    position:fixed;
     bottom:30px;
     right:20px;
 	border:1px solid #fff;
@@ -831,44 +823,33 @@ p {
     color:#fff;
 }
 
-.my-youtube {
+.rel-buttons {
     text-align:center;
     cursor:pointer;
     vertical-align:middle;
     width:39px;
     height:39px;
-    border-radius:5px;
+    border-radius:50%;
     font-size:20px;
     position:fixed;
-    bottom:30px;
-    left:20px;
 	border:1px solid #fff;
-    background: red;
 }
-.my-youtube > a {
+.rel-buttons > a {
     position:relative;
-    top:7px;
+    top:25%;
     color:#fff;
 }
 
+.my-youtube {
+    bottom:30px;
+    left:20px;
+    background: red;
+}
+
 .my-telegram {
-    text-align:center;
-    cursor:pointer;
-    vertical-align:middle;
-    width:39px;
-    height:39px;
-    border-radius:5px;
-    font-size:20px;
-    position:fixed;
     bottom:80px;
     left:20px;
-	border:1px solid #fff;
     background: #02d0ff;
-}
-.my-telegram > a {
-    position:relative;
-    top:7px;
-    color:#fff;
 }
 
 
