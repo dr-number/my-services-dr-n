@@ -831,6 +831,47 @@ p {
     color:#fff;
 }
 
+.my-youtube {
+    text-align:center;
+    cursor:pointer;
+    vertical-align:middle;
+    width:39px;
+    height:39px;
+    border-radius:5px;
+    font-size:20px;
+    position:fixed;
+    bottom:30px;
+    left:20px;
+	border:1px solid #fff;
+    background: red;
+}
+.my-youtube > a {
+    position:relative;
+    top:7px;
+    color:#fff;
+}
+
+.my-telegram {
+    text-align:center;
+    cursor:pointer;
+    vertical-align:middle;
+    width:39px;
+    height:39px;
+    border-radius:5px;
+    font-size:20px;
+    position:fixed;
+    bottom:80px;
+    left:20px;
+	border:1px solid #fff;
+    background: #02d0ff;
+}
+.my-telegram > a {
+    position:relative;
+    top:7px;
+    color:#fff;
+}
+
+
 .my-title{
     font-size: 38.5px;
 }

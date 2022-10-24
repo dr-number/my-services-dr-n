@@ -3,6 +3,25 @@ const PROJ_IMG = "my_projects";
 //document.getElementById("title-h1").innerText = data.title;
 document.getElementById("top-description").innerText = data.top_description;
 document.getElementById("about-my-works").innerText = data.about_my_works;
+document.getElementById("my_youtube_href").href = data.my_youtube;
+document.getElementById("my_telegram_href").href = data.my_telegram;
+
+const mySkills = document.getElementById("my-skills");
+
+if(mySkills){
+    let li;
+    const skills = data.skills;
+
+    skills.forEach(item => {
+
+        li = document.createElement("li");
+        li.innerHTML = `<span class="bar" data-width="` + item.per + `%"></span>
+        <h3>` + item.name + `</h3>`
+
+        mySkills.appendChild(li);
+    });
+}
+
 
 const myWorksHref = document.getElementById("my-works-href");
 if (myWorksHref && data.my_works){
@@ -33,7 +52,6 @@ if (myWorksBox && data.my_works){
 
     myWorks.forEach(category => {
 
-        i = 0;
         category.works.forEach(proj => {
             ++i;
 
@@ -72,10 +90,11 @@ if (myWorksBox && data.my_works){
     const myWorksGrid = document.createElement("ul");
     myWorksGrid.setAttribute("id", "portfolio-grid");
     myWorksGrid.classList.add("thumbnails", "row");
+
+    i = 0;
     
     myWorks.forEach(category => {
 
-        i = 0;
         category.works.forEach(proj => {
             ++i;
 

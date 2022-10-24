@@ -2,6 +2,19 @@ const data = {
     //"title": "Программирование, web-разработка, 3D моделирование",
     "top_description": "",
     "about_my_works": "",
+    "my_youtube": "https://www.youtube.com/channel/UCj2GeBv-OHLXVc9CJcbuqlw",
+    "my_telegram": "https://t.me/larnik7",
+    "skills":[
+        {"name": "Python", "per": 30},
+        {"name": "PHP", "per": 30},
+        {"name": "Базы данных", "per": 25},
+        {"name": "Java; Kotlin", "per": 30},
+        {"name": "Css; Sass", "per": 10},
+        {"name": "Js; jQuery", "per": 25},
+        {"name": "Docker; Docker Compose", "per": 10},
+        {"name": "Работа с Legacy-кодом", "per": 35},
+        {"name": "Автоматизация задач", "per": 25}
+    ],
     "my_works": [
         {
             "title": "Программирование",
