@@ -57,11 +57,11 @@ const data = {
                 {
                     "img": "api_stripe.png",
                     "title": "Работа с API платежной системы Stripe",
-                    "title_mini": "API платежной системы Stripe",
+                    "title_mini": "Платежная система",
                     "skills": "Python, Django",
                     "link": "https://github.com/dr-number/Rishat_django_test.git",
                     "description": "",
-                    "description_mini": "API платежной системы Stripe",
+                    "description_mini": "API Stripe",
                     "date":""
                 },
                 {
@@ -86,12 +86,12 @@ const data = {
                 },
                 {
                     "img": "Mask_lite.jpg",
-                    "title": "Mask lite",
-                    "title_mini": "Библиотека для ввода по маске",
+                    "title": "Библиотека \"Mask lite\" для ввода по маске на чистом js",
+                    "title_mini": "Ввод по маске",
                     "skills": "чистый JS",
                     "link": "https://dr.number.gitlab.io/mask-lite/",
                     "description": "",
-                    "description_mini": "Библиотека для ввода по маске на чистом js",
+                    "description_mini": "Библиотека на js",
                     "date":""
                 },
                 {
@@ -164,7 +164,7 @@ const data = {
                 {
                     "img": "emblem.jpg",
                     "title": "Анимированный логотип",
-                    "title_mini": "Анимированный логотип",
+                    "title_mini": "Логотип",
                     "skills": "CAD моделирование",
                     "link": "https://youtu.be/gj9LFGiHqG0",
                     "description": "",
