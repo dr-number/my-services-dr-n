@@ -5,15 +5,13 @@
  * Author URL: http://graphberry.com
  * License: http://graphberry.com/pages/license
 -->
-<html lang="en">
+<html lang="ru">
     
     <head>
         <meta charset=utf-8>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>web-разработка, 3D моделирование</title>
-        <!-- Load Roboto font -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <!-- Load css styles -->
+
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
         <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -127,9 +125,20 @@
                         <div class="highlighted-box center">
                             <h1>We're Hiring</h1>
                             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, ullamcorper suscipit lobortis nisl ut aliquip consequat. I learned that we can do anything, but we can't do everything...</p>
-                            <a href="#" class="button button-sp my_telegram_href">
-                                <i class="fab fa-telegram"></i> Связаться со мной
-                            </a>
+
+                            <div class="contact-with-me">
+
+                                <p>Связаться со мной</p>
+
+                                <a class="my_telegram_href" href="#">
+                                    <i class="fab fa-telegram-plane"></i>
+                                </a>
+
+                                <a class="my_email_href" href="#">
+                                    <i class="fas fa-at"></i>
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -167,6 +176,12 @@
             </a>
         </div>
 
+        <div class="rel-buttons my-email">
+            <a class="my_email_href" href="#">
+                <i class="fas fa-at"></i>
+            </a>
+        </div>
+
         <div class="rel-buttons my-telegram">
             <a class="my_telegram_href" href="#">
                 <i class="fab fa-telegram-plane"></i>
@@ -179,6 +194,7 @@
         <!-- ScrollUp button end -->
         <!-- Include javascript -->
         <script src="js/jquery.js"></script>
+        
         <script type="text/javascript" src="js/jquery.mixitup.js"></script>
         <script type="text/javascript" src="js/bootstrap.js"></script>
         <script type="text/javascript" src="js/modernizr.custom.js"></script>

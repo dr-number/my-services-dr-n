@@ -6,6 +6,7 @@ const data = {
     "my_telegram": "https://t.me/larnik7",
     "my_github": "https://github.com/dr-number",
     "my_gitlab": "https://gitlab.com/dr.number",
+    "my_email_href": "dr.number@yandex.ru",
     "top_my_services": [
         {
             "title": "Программирование",
