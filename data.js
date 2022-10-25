@@ -83,7 +83,7 @@ const data = {
                 {
                     "img": "Mask_lite.jpg",
                     "title": "Mask lite",
-                    "title_mini": "Библиотека для ввода по маске на чистом js",
+                    "title_mini": "Библиотека для ввода по маске",
                     "skills": "чистый JS",
                     "link": "https://dr.number.gitlab.io/mask-lite/",
                     "description": "",
@@ -118,6 +118,26 @@ const data = {
             "href": "3d_modeling",
             "works": [
                 {
+                    "img": "oppozite_assembly.jpg",
+                    "title": "Оппозитный двигатель",
+                    "title_mini": "Оппозитный двигатель",
+                    "skills": "CAD моделирование",
+                    "link": "https://youtu.be/8jZJs5oeCW4",
+                    "description": "Оппозитный двигатель. Собран по чертежам",
+                    "description_mini": "Собран по чертежам",
+                    "date":""
+                },
+                {
+                    "img": "mehanizm.jpg",
+                    "title": "Редуктор",
+                    "title_mini": "Редуктор",
+                    "skills": "CAD моделирование",
+                    "link": "https://youtu.be/o7rttUjBemc",
+                    "description": "Редуктор. Собран по чертежам",
+                    "description_mini": "Собран по чертежам",
+                    "date":""
+                },
+                {
                     "img": "nissan_bluebird_u11.jpg",
                     "title": "Nissan Bluebird u11 Модель для 3D печати",
                     "title_mini": "Nissan Bluebird u11",
@@ -128,15 +148,16 @@ const data = {
                     "date":""
                 },
                 {
-                "img": "nissan_x-trail_t32.jpg",
-                "title": "Nissan X-Trail T32  Модель для 3D печати",
-                "title_mini": "Nissan X-Trail T32",
-                "skills": "CAD моделирование",
-                "link": "https://youtu.be/RTWr06DtmOk",
-                "description": "",
-                "description_mini": "Для 3D печати",
-                "date":""
-            }]
+                    "img": "nissan_x-trail_t32.jpg",
+                    "title": "Nissan X-Trail T32  Модель для 3D печати",
+                    "title_mini": "Nissan X-Trail T32",
+                    "skills": "CAD моделирование",
+                    "link": "https://youtu.be/RTWr06DtmOk",
+                    "description": "",
+                    "description_mini": "Для 3D печати",
+                    "date":""
+                }
+        ]
         }
     ],
 }

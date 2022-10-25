@@ -111,8 +111,7 @@ if (myWorksBox && data.my_works){
                         <div><span>Дата:</span>` + proj.date + `</div>
                         <div><span>Технологии:</span>` + proj.skills + `</div>
                         <div><span>Ссылка:</span><a href="` + proj.link + `">` + proj.link + `</a></div>
-                        <div>` + proj.description + `</div>
-
+                       
                     </div>
                     <p>` + proj.description + `</p>
                 </div>`;
@@ -140,7 +139,7 @@ if (myWorksBox && data.my_works){
             li.innerHTML = `<div class="thumbnail">
             <img src="` + PROJ_IMG + `/`  + category.href + `/` + proj.img + `" alt="` + proj.title + `">
             <a href="#single-project" class="more show_hide" rel="#slidingDiv` + i + `">
-                <i class="icon-plus"></i>
+                <i class="fas fa-info-circle"></i>
             </a>
             <h3>` + proj.title_mini + `</h3>
             <p>` + proj.description_mini + `</p>
