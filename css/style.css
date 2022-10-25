@@ -562,7 +562,7 @@ p {
     margin:0px;
 }
 .skills li {
-    margin-bottom:15px;
+    margin-bottom:18px;
     background:#FFF;
     height:20px;
     padding:1px;
@@ -958,6 +958,12 @@ p {
 .my-title{
     font-size: 38.5px;
     color: #fff !important;
+}
+
+.my-title-black{
+    font-size: 27px;
+    font-weight: bold;
+    color: #000 !important;
 }
 /*
 4 Responsible

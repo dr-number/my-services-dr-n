@@ -1,5 +1,6 @@
 const data = {
     //"title": "Программирование, web-разработка, 3D моделирование",
+    "about_me": "Web-разработчик (backend). Люблю python. В свободное время занимаюсь твердотельным моделированием.",
     "top_description": "Более детально ознакомиться с моими проектами можно в следующих источниках:",
     "about_my_works": "",
     "my_youtube": "https://www.youtube.com/channel/UCj2GeBv-OHLXVc9CJcbuqlw",
@@ -7,6 +8,7 @@ const data = {
     "my_github": "https://github.com/dr-number",
     "my_gitlab": "https://gitlab.com/dr.number",
     "my_email_href": "dr.number@yandex.ru",
+    "your_task_description": "Понравились мои работы? Хотите подобное или что-то другое? Пишите, обсудим!",
     "top_my_services": [
         {
             "title": "Программирование",
@@ -36,15 +38,15 @@ const data = {
         }
     ],
     "skills":[
-        {"name": "Python", "per": 30},
-        {"name": "PHP", "per": 30},
-        {"name": "Базы данных", "per": 25},
+        {"name": "Python", "per": 70},
+        {"name": "PHP", "per": 50},
+        {"name": "Базы данных", "per": 40},
         {"name": "Java; Kotlin", "per": 30},
         {"name": "Css; Sass", "per": 10},
         {"name": "Js; jQuery", "per": 25},
-        {"name": "Docker; Docker Compose", "per": 10},
-        {"name": "Работа с Legacy-кодом", "per": 35},
-        {"name": "Автоматизация задач", "per": 25}
+        {"name": "Docker; Docker Compose", "per": 20},
+        {"name": "Работа с Legacy-кодом", "per": 45},
+        {"name": "Автоматизация задач", "per": 45}
     ],
     "my_works": [
         {
