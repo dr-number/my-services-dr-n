@@ -156,6 +156,16 @@ const data = {
                     "description": "",
                     "description_mini": "Для 3D печати",
                     "date":""
+                },
+                {
+                    "img": "emblem.jpg",
+                    "title": "Анимированный логотип",
+                    "title_mini": "Анимированный логотип",
+                    "skills": "CAD моделирование",
+                    "link": "https://youtu.be/gj9LFGiHqG0",
+                    "description": "",
+                    "description_mini": "Анимированный логотип",
+                    "date":""
                 }
         ]
         }
