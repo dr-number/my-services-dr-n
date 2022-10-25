@@ -8,7 +8,8 @@ const data = {
     "my_github": "https://github.com/dr-number",
     "my_gitlab": "https://gitlab.com/dr.number",
     "my_email_href": "dr.number@yandex.ru",
-    "your_task_description": "Понравились мои работы? Хотите подобное или что-то другое? Пишите, обсудим!",
+    "your_task_description": `Понравились мои работы? Хотите подобное или что-то другое? Пишите, обсудим!</br>
+    Заходите на <a href="https://www.youtube.com/channel/UCj2GeBv-OHLXVc9CJcbuqlw">мой YouTube канал</a> :)`,
     "top_my_services": [
         {
             "title": "Программирование",

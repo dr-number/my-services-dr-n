@@ -5,7 +5,7 @@ const SERVICES_IMG = "my_services";
 document.getElementById("top-description").innerText = data.top_description;
 document.getElementById("about-my-works").innerText = data.about_my_works;
 document.getElementById("about-me").innerText = data.about_me;
-document.getElementById("your-task-description").innerText = data.your_task_description;
+document.getElementById("your-task-description").innerHTML = data.your_task_description;
 
 document.querySelectorAll(".my_youtube_href").forEach(item => {
     item.href = data.my_youtube;
@@ -75,7 +75,7 @@ if (myWorksHref && data.my_works){
     myWorks.forEach(item => {
         a = document.createElement("a");
         a.href = "#noAction";
-        a.innerText = item.title;
+        a.innerText = item.title + " (" + item.works.length + ")";
 
         li = document.createElement("li");
         li.classList.add("filter");
