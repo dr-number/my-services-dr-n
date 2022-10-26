@@ -67,7 +67,7 @@ if (myWorksHref && data.my_works){
                 </li>`;
     });
 
-    myWorksHref.innerHTML = html;
+    myWorksHref.innerHTML += html;
 }
 
 

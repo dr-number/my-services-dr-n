@@ -146,7 +146,7 @@ const data = {
                     "title": "Nissan Bluebird u11 Модель для 3D печати",
                     "title_mini": "Nissan Bluebird u11",
                     "skills": "CAD моделирование",
-                    "link": "https://youtu.be/RTWr06DtmOk",
+                    "link": "https://youtu.be/rzL8aarhAno",
                     "description": "",
                     "description_mini": "Для 3D печати",
                     "date":""
