@@ -17,6 +17,11 @@ document.querySelectorAll(".my_telegram_href").forEach(item => {
 
 document.querySelectorAll(".my_email_href").forEach(item => {
     item.href = "mailto:" + data.my_email_href;
+    item.innerText = data.my_email_href;
+});
+
+document.querySelectorAll(".my_email_text").forEach(item => {
+    item.innerHTML = data.my_email_href;
 });
 
 document.querySelectorAll(".my_gitlab_href").forEach(item => {
