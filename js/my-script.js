@@ -35,67 +35,49 @@ document.querySelectorAll(".my_github_href").forEach(item => {
 const topMyServices = document.getElementById("top-my-services");
 
 if(topMyServices){
-    let div;
+    let html = '';
 
     data.top_my_services.forEach(item => {
 
-        div = document.createElement("div");
-        div.innerHTML = `<div class="span6">
-        <div class="centered service">
-            <div class="circle-border zoom-in">
-                <img class="img-circle" src="` + SERVICES_IMG + `/` + item.img + `" alt="` + item.title + `">
-            </div>
-            <h3>` + item.title + `</h3>
-            <div class="top-my-services-descr">` + item.description_html + `</div>
-        </div>
-    </div>`
-
-        topMyServices.appendChild(div);
+        html += `<div>
+                    <div class="span6">
+                        <div class="centered service">
+                            <div class="circle-border zoom-in">
+                                <img class="img-circle" src="` + SERVICES_IMG + `/` + item.img + `" alt="` + item.title + `">
+                            </div>
+                            <h3>` + item.title + `</h3>
+                            <div class="top-my-services-descr">` + item.description_html + `</div>
+                        </div>
+                    </div>
+                </div>`;
     });
+
+    topMyServices.innerHTML = html;
 }
-
-const mySkills = document.getElementById("my-skills");
-
-if(mySkills){
-    let li;
-    const skills = data.skills;
-
-    skills.forEach(item => {
-
-        li = document.createElement("li");
-        li.innerHTML = `<span class="bar" data-width="` + item.per + `%"></span>
-        <h3>` + item.name + `</h3>`
-
-        mySkills.appendChild(li);
-    });
-}
-
 
 const myWorksHref = document.getElementById("my-works-href");
 if (myWorksHref && data.my_works){
 
-    let li, a;
+    let html = '';
     const myWorks = data.my_works;
 
     myWorks.forEach(item => {
-        a = document.createElement("a");
-        a.href = "#noAction";
-        a.innerText = item.title + " (" + item.works.length + ")";
-
-        li = document.createElement("li");
-        li.classList.add("filter");
-        li.setAttribute("data-filter", item.href);
-
-        li.appendChild(a);
-        myWorksHref.appendChild(li);
+        html += `<li class="filter" data-filter="` + item.href + `">
+                    <a href="#noAction">` + item.title + ` (` + item.works.length + `)</a>
+                </li>`;
     });
+
+    myWorksHref.innerHTML = html;
 }
 
 
 const myWorksBox = document.getElementById("single-project");
 if (myWorksBox && data.my_works){
     
-    let div, i = 0;
+    let i = 0;
+    let html = '';
+    let htmlCard = '';
+
     const myWorks = data.my_works;
 
     myWorks.forEach(category => {
@@ -103,65 +85,63 @@ if (myWorksBox && data.my_works){
         category.works.forEach(proj => {
             ++i;
 
-            div = document.createElement("div");
-            div.classList.add("toggleDiv", "row-fluid", "single-project");
-            div.setAttribute("id", "slidingDiv" + i);
-            
-            div.innerHTML = `<div class="span6">
-                <img src="` + PROJ_IMG + `/` + category.href + `/` + proj.img + `" alt="` + proj.title + `" />
-            </div>
-            <div class="span6">
-                <div class="project-description">
-                    <div class="project-title clearfix">
-                        <h3>` + proj.title + `</h3>
-                        <span class="show_hide close">
-                            <i class="icon-cancel"></i>
-                        </span>
+            html += 
+            `<div class="toggleDiv row-fluid single-project" id="slidingDiv` + i + `">
+                <div class="span6">
+                    <img src="` + PROJ_IMG + `/` + category.href + `/` + proj.img + `" alt="` + proj.title + `" />
+                </div>
+                <div class="span6">
+                    <div class="project-description">
+                        <div class="project-title clearfix">
+                            <h3>` + proj.title + `</h3>
+                            <span class="show_hide close">
+                                <i class="icon-cancel"></i>
+                            </span>
+                        </div>
+                        <div class="project-info">
+                            <div><span>Дата:</span>` + proj.date + `</div>
+                            <div><span>Технологии:</span>` + proj.skills + `</div>
+                            <div><span>Ссылка:</span><a href="` + proj.link + `">` + proj.link + `</a></div>
+                        </div>
+                        <p>` + proj.description + `</p>
                     </div>
-                    <div class="project-info">
-                        <div><span>Дата:</span>` + proj.date + `</div>
-                        <div><span>Технологии:</span>` + proj.skills + `</div>
-                        <div><span>Ссылка:</span><a href="` + proj.link + `">` + proj.link + `</a></div>
-                       
-                    </div>
-                    <p>` + proj.description + `</p>
-                </div>`;
-        
-            myWorksBox.appendChild(div);
+                </div>
+            </div>`;
+
+            htmlCard += 
+            `<li class="span4 mix mix_all ` + category.href + `">
+                <div class="thumbnail animated fadeInDown">
+                    <img src="` + PROJ_IMG + `/`  + category.href + `/` + proj.img + `" alt="` + proj.title + `">
+                    <a href="#single-project" class="more show_hide" rel="#slidingDiv` + i + `">
+                        <i class="fas fa-info-circle"></i>
+                    </a>
+                    <h3>` + proj.title_mini + `</h3>
+                    <p>` + proj.description_mini + `</p>
+                    <div class="mask"></div>
+                </div>
+            </li>`;
 
         });
     });
 
+    html += '<ul id="portfolio-grid" class="thumbnails row">' + htmlCard + '</ul>';
 
-    const myWorksGrid = document.createElement("ul");
-    myWorksGrid.setAttribute("id", "portfolio-grid");
-    myWorksGrid.classList.add("thumbnails", "row");
+    myWorksBox.innerHTML = html;
+}
 
-    i = 0;
-    
-    myWorks.forEach(category => {
+const mySkills = document.getElementById("my-skills");
 
-        category.works.forEach(proj => {
-            ++i;
+if(mySkills){
+    let html = '';
+    const skills = data.skills;
 
-            li = document.createElement("li");
-            li.classList.add("span4", "mix", category.href);
-            
-            li.innerHTML = `<div class="thumbnail">
-            <img src="` + PROJ_IMG + `/`  + category.href + `/` + proj.img + `" alt="` + proj.title + `">
-            <a href="#single-project" class="more show_hide" rel="#slidingDiv` + i + `">
-                <i class="fas fa-info-circle"></i>
-            </a>
-            <h3>` + proj.title_mini + `</h3>
-            <p>` + proj.description_mini + `</p>
-            <div class="mask"></div>
-        </div>`;
-        
-            myWorksGrid.appendChild(li);
+    skills.forEach(item => {
 
-        });
+        html += `<li>
+                    <span class="bar" data-width="` + item.per + `%"></span>
+                    <h3>` + item.name + `</h3>
+                </li>`;
     });
 
-    myWorksBox.appendChild(myWorksGrid);
-
+    mySkills.innerHTML = html;
 }
