@@ -86,7 +86,7 @@ const data = {
                 },
                 {
                     "img": "Mask_lite.jpg",
-                    "title": "Библиотека \"Mask lite\" для ввода по маске на чистом js",
+                    "title": "Библиотека Mask lite для ввода по маске на чистом js",
                     "title_mini": "Ввод по маске",
                     "skills": "чистый JS",
                     "link": "https://dr.number.gitlab.io/mask-lite/",
@@ -96,8 +96,8 @@ const data = {
                 },
                 {
                     "img": "cosmo_strike.jpg",
-                    "title": "Игра космический удар",
-                    "title_mini": "Игра космический удар",
+                    "title": "Космический удар",
+                    "title_mini": "Космический удар",
                     "skills": "Python, Pygame",
                     "link": "https://youtu.be/LIIQs8umVV8",
                     "description": "",
@@ -106,8 +106,8 @@ const data = {
                 },
                 {
                     "img": "two_snake.jpg",
-                    "title": "Мини-игра \"Две змейки\"",
-                    "title_mini": "Мини-игра \"Две змейки\"",
+                    "title": "Две змейки",
+                    "title_mini": "Две змейки",
                     "skills": "C++",
                     "link": "https://youtu.be/ZInq1xdfp8Q",
                     "description": "Человек играет против компьютера",
