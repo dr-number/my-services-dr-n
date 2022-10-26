@@ -77,6 +77,7 @@ if (myWorksBox && data.my_works){
     let i = 0;
     let html = '';
     let htmlCard = '';
+    let date = ''
 
     const myWorks = data.my_works;
 
@@ -84,6 +85,8 @@ if (myWorksBox && data.my_works){
 
         category.works.forEach(proj => {
             ++i;
+
+            date = proj.date ? '<div><span>Дата:</span>' + proj.date + '</div>' : '';
 
             html += 
             `<div class="toggleDiv row-fluid single-project" id="slidingDiv` + i + `">
@@ -98,9 +101,9 @@ if (myWorksBox && data.my_works){
                                 <i class="icon-cancel"></i>
                             </span>
                         </div>
-                        <div class="project-info">
-                            <div><span>Дата:</span>` + proj.date + `</div>
-                            <div><span>Технологии:</span>` + proj.skills + `</div>
+                        <div class="project-info">`
+                           + date + 
+                           `<div><span>Технологии:</span>` + proj.skills + `</div>
                             <div><span>Ссылка:</span><a href="` + proj.link + `">` + proj.link + `</a></div>
                         </div>
                         <p>` + proj.description + `</p>
