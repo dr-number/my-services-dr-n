@@ -1,10 +1,9 @@
-p.project-card-descr,
-p#your-task-description,
-p#about-me{
+p.project-card-descr{
     text-align: justify;
 }
 
 p#your-task-description,
 p#about-me{
+    text-align: left;
     font-weight: bold;
 }
