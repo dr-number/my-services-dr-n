@@ -1,0 +1,10 @@
+p.project-card-descr,
+p#your-task-description,
+p#about-me{
+    text-align: justify;
+}
+
+p#your-task-description,
+p#about-me{
+    font-weight: bold;
+}
