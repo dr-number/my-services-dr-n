@@ -1030,7 +1030,8 @@ p {
     .price-column, .testimonial {
         margin-top:30px;
     }
-    .primary-section .triangle{
+    .primary-section .triangle,
+    .secondary-section .triangle{
         display: none;
     }
     #title-h1{
