@@ -11,3 +11,13 @@ p#about-me{
 p#your-task-description a{
     text-decoration: underline;
 }
+
+#portfolio-grid .mix .fadeInDown{
+    border-radius: 5px;
+    background-color: #00000085;
+}
+
+#portfolio-grid .mix .fadeInDown img,
+#my-works-href .filter a{
+    border-radius: 5px;
+}

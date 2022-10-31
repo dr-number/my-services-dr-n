@@ -143,6 +143,7 @@ p {
 .highlighted-box {
     background:#F4F8F9;
     padding:20px 30px;
+    border-radius: 5px;
 }
 .highlighted-box h1 {
     margin:0px;
@@ -471,10 +472,12 @@ p {
 ***************************************/
  .single-project {
     margin-bottom:30px;
-    background:#181A1C;
+    background:#2a2a2af2;
+    border-radius: 5px;
 }
 .single-project img {
     width:100%;
+    border-radius: 5px;
 }
 .project-description {
     padding-right:20px;
@@ -570,6 +573,7 @@ p {
     background:#FFF;
     height:20px;
     padding:1px;
+    border-radius: 5px;
 }
 .skills li h3 {
     position: relative;
@@ -584,6 +588,7 @@ p {
     height:20px;
     position:absolute;
     background-color: #02d0ff;
+    border-radius: 5px;
 }
 
 .my_email_text,
@@ -596,6 +601,7 @@ p {
     -o-transform: rotate(270deg);
     -ms-transform: rotate(270deg);
     transform: rotate(270deg);
+    border-radius: 5px;
 }
 
 .my_email_text:hover,
@@ -944,6 +950,10 @@ p {
 .contact-with-me p{
     font-size: 20px;
     font-weight: bold;
+}
+
+.contact-with-me a{
+    border-radius: 5px;
 }
 
 .my-title{

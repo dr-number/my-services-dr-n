@@ -102,8 +102,8 @@ if (myWorksBox && data.my_works){
                             </span>
                         </div>
                         <div class="project-info">`
-                           + date + 
-                           `<div><span>Технологии:</span>` + proj.skills + `</div>
+                        + date + 
+                        `<div><span>Технологии:</span>` + proj.skills + `</div>
                             <div><span>Ссылка:</span><a href="` + proj.link + `">` + proj.link + `</a></div>
                         </div>
                         <p class="project-card-descr">` + proj.description + `</p>

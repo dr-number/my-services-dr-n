@@ -55,7 +55,7 @@ const data = {
             "href": "programming",
             "works": [
                 {
-                    "img": "api_stripe.png",
+                    "img": "api_stripe.jpg",
                     "title": "Работа с API платежной системы Stripe",
                     "title_mini": "Платежная система",
                     "skills": "Python, Django",
