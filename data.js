@@ -3,13 +3,15 @@ const data = {
     "about_me": "Web-разработчик (backend). Люблю python. В свободное время занимаюсь твердотельным моделированием.",
     "top_description": "Более детально ознакомиться с моими проектами можно в следующих источниках:",
     "about_my_works": "",
-    "my_youtube": "https://www.youtube.com/channel/UCj2GeBv-OHLXVc9CJcbuqlw",
-    "my_telegram": "https://t.me/larnik7",
+    // "my_youtube": "https://www.youtube.com/channel/UCj2GeBv-OHLXVc9CJcbuqlw",
+    // "my_telegram": "https://t.me/larnik7",
     "my_github": "https://github.com/dr-number",
     "my_gitlab": "https://gitlab.com/dr.number",
     "my_email_href": "dr.number@yandex.ru",
-    "your_task_description": `Понравились мои работы? Хотите подобное или что-то другое? Пишите, обсудим!</br>
-    Заходите на <a href="https://www.youtube.com/channel/UCj2GeBv-OHLXVc9CJcbuqlw">мой YouTube канал</a> :)`,
+    // "your_task_description": `Понравились мои работы? Хотите подобное или что-то другое? Пишите, обсудим!</br>
+    // Заходите на <a href="https://www.youtube.com/channel/UCj2GeBv-OHLXVc9CJcbuqlw">мой YouTube канал</a> :)`,
+    "your_task_description": `Понравились мои работы? Хотите подобное или что-то другое? Пишите на почту,</br>
+    <a href="mailto:dr.number@yandex.ru">dr.number@yandex.ru</a> обсудим! :)`,
     "top_my_services": [
         {
             "title": "Программирование",

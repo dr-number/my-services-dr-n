@@ -923,26 +923,26 @@ p {
 }
 
 .my-telegram {
-    bottom:30px;
+    bottom:180px;
     left:20px;
     background: rgb(17 205 250);
 }
 
 
 .my-youtube {
-    bottom:80px;
+    bottom:130px;
     left:20px;
     background: red;
 }
 
 .my-gitlab {
-    bottom:130px;
+    bottom:80px;
     left:20px;
     background: rgb(255, 115, 0);
 }
 
 .my-github {
-    bottom:180px;
+    bottom:30px;
     left:20px;
     background: #000;
 }
